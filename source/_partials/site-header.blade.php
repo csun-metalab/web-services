@@ -13,7 +13,7 @@
       </div>
       <ul class="primary-nav__links">
         <li><a href="/" class="primary-nav__link active">Home</a></li>
-        <li><a href="//github.com/csun-metalab/metaphor.git" target="_blank" class="primary-nav__link"><i class="fa fa-github" aria-hidden="true"></i> Github</a></li>
+        <li><a href="//github.com/csun-metalab" target="_blank" class="primary-nav__link"><i class="fa fa-github" aria-hidden="true"></i> Github</a></li>
       </ul>
     </div>
   </nav>

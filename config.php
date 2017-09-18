@@ -1,12 +1,12 @@
 <?php
 
 return [
-    'local'    => "//localhost:8000/",
-    'local'    => true,
+    'testingUrl' => "//testing.sandbox.csun.edu/metalab/",
+    'local'      => true,
     'getBaseUrl' => function($page, $uri) {
-    	if(!empty($page->production) && $page->production) {
+    	if($page->production) {
     		return $page->prodUrl.$uri;
-    	} elseif(!empty($page->local) && $page->local) {
+    	} elseif($page->local) {
     		return $page->testingUrl.$uri;
     	} else {
     		return $page->sandboxUrl.$uri;

@@ -3,3 +3,4 @@
 /build_production/
 /node_modules/
 /vendor/
+.DS_Store

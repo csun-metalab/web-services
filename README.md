@@ -3,7 +3,7 @@
 > The landing page for [api.sandbox.csun.edu](api.sandbox.csun.edu) / [api.metalab.csun.edu](api.metalab.csun.edu)
 
 # Table of Contents
-1. [Development Dependencies](#dev-dependencies)
+1. [Development Dependencies](#development-dependencies)
 2. [Serving](#serving-the-site)
 3. [Pushing Changes](#pushing-changes)
 

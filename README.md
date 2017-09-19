@@ -56,10 +56,10 @@ Then we proceed to commit as normal.
 $ git commit -m "<Your Message Here>"
 ```
 
-After which we issue the following command
+After which we issue
 
 ```
-$ git subtree push --prefix build_<build_type> origin <branch_name>
+$ git push
 ```
 
 **Notes:** _The mappings to builds and branches are as follows_

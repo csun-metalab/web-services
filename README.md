@@ -62,7 +62,7 @@ After which we issue the following command
 $ git subtree push --prefix build_<build_type> origin <branch_name>
 ```
 
-*Notes:* _The mappings to builds and branches are as follows_
+**Notes:** _The mappings to builds and branches are as follows_
 
 ```
 build_local      --> dev

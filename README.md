@@ -2,6 +2,11 @@
 
 > The landing page for [api.sandbox.csun.edu](api.sandbox.csun.edu) / [api.metalab.csun.edu](api.metalab.csun.edu)
 
+# Table of Contents
+1. [Development Dependencies](#development-dependencies)
+2. [Serving](#serving-the-site)
+3. [Pushing Changes](#pushing-changes)
+
 ## Development Dependencies
 
 Make sure you meet the following dependencies and install them in the following order. 
@@ -9,6 +14,8 @@ Make sure you meet the following dependencies and install them in the following 
 - [php](https://secure.php.net)
 - [composer](https://www.getcomposer.org)
 - [jigsaw](http://jigsaw.tighten.co/)
+
+### Optional Dependencies
 - [node](https://nodejs.org/en/) / [npm](https://www.npmjs.com/)
 
 ### Optional Installation
@@ -17,22 +24,48 @@ Make sure you meet the following dependencies and install them in the following 
 
 ## Serving the Site
 
-Once you have the dependencies installed, simply issue one of the following commands in your terminal, note that in both cases the ```--pretty=false``` flag is given to avoid Jigsaw's default behavior:
+Once you have the dependencies installed, simply issue one of the following commands in your terminal:
+
+```
+$ jigsaw build            // builds using config.php
+$ jigsaw build production // builds using config.production.php
+$ jigsaw build sandbox    // builds using config.sandbox.php
+```
 
 ...to serve the application with the built-in PHP server:
 
 ```
-$ jigsaw build --pretty=false
-$ jigsaw serve
+$ jigsaw serve            // serves the contents inside build_local
+$ jigsaw serve production // serves the contents inside build_production
+$ jigsaw serve sandbox    // serves the contents inside build_sandbox
 ```
 
-...to avoid typing the commands above over and over, simply type the following commands:
+## Pushing changes
+
+After we have built the specified environment, we are ready to push our files to their respective branches.
+Since we're using jigsaw to automate the build process as much as possible there's a special way to push to the respective branches ```dev```, ```master```, and ```demo```
+First we'll need to do a force add replacing <build_type> with the respective build: local, sandbox, production
 
 ```
-$ jigsaw build --pretty=false
-$ gulp watch
+$ git add -f build_<build_type>
 ```
 
-The added benefit of this method is that your changes are re-compiled on save.
+Then we proceed to commit as normal.
 
-**Note:** If the config file is updated or you're not seeing your changes, killing gulp and re-running ```$ jigsaw build --pretty=false``` and ```$ gulp watch``` fixes this issue.
+```
+$ git commit -m "<Your Message Here>"
+```
+
+After which we issue
+
+```
+$ git push
+```
+
+**Notes:** _The mappings to builds and branches are as follows_
+
+```
+build_local      --> dev
+build_production --> master
+build_sandbox    --> demo
+```

@@ -1,6 +1,4 @@
 /build_local/
-/build_sandbox/
-/build_production/
 /node_modules/
 /vendor/
 .DS_Store

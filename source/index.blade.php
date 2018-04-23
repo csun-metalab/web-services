@@ -14,40 +14,68 @@
           <br>
           <div class="row">
               <div class="col-md-4">
-                <img src="/imgs/affinity.png" class="img--fluid" alt="Affinity">
-                <p>  
-                  <a href="{{ $page->getBaseUrl('affinity') }}">Affinity</a>
+                <p>
+                    <a href="{{ $page->getBaseUrl('affinity')}}">
+                        <img src="/imgs/affinity.png" class="img--fluid" alt="Affinity">
+                        Affinity
+                    </a>
                 </p>
               </div>
               <div class="col-md-4">
-                <img src="/imgs/curriculum.png" class="img--fluid" alt="Curriculum">
                 <p>
-                  <a href="{{ $page->getBaseUrl('curriculum') }}">Curriculum</a>
+                    <a href="{{ $page->getBaseUrl('citations') }}">
+                        <img src="/imgs/citations.png" class="img--fluid" alt="Citations">
+                        Citations
+                    </a>
                 </p>
               </div>
               <div class="col-md-4">
-                <img src="/imgs/degrees.png" class="img--fluid" alt="Degrees">
                 <p>
-                  <a href="{{ $page->getBaseUrl('degrees') }}">Degrees</a>
+                    <a href="{{ $page->getBaseUrl('curriculum') }}">
+                        <img src="/imgs/curriculum.png" class="img--fluid" alt="Curriculum">
+                        Curriculum
+                    </a>
+                </p>
+              </div>
+              <div class="col-md-4">
+                <p>
+                    <a href="{{ $page->getBaseUrl('degrees') }}">
+                        <img src="/imgs/degrees.png" class="img--fluid" alt="Degrees">
+                        Degrees
+                    </a>
                 </p>
               </div>
               <hr>
-              <div class="col-md-4 col-md-offset-2">
-                <img src="/imgs/directory.png" class="img--fluid" alt="Directory">
+              <div class="col-md-4">
                 <p>
-                  <a href="{{ $page->getBaseUrl('directory') }}">Directory</a>
+                    <a href="{{ $page->getBaseUrl('directory') }}">
+                        <img src="/imgs/directory.png" class="img--fluid" alt="Directory">
+                        Directory
+                    </a>
                 </p>
               </div>
-              {{-- <div class="col-md-4"> --}}
-                {{-- <img src="//www.csun.edu/metalab/metaphor/docs/imgs/faculty.png" class="img--fluid" alt="Roster">
-                <p>
-                  <a href="{{ $page->getBaseUrl('roster') }}">Roster</a>
-                </p> --}}
-              {{-- </div> --}}
               <div class="col-md-4">
-                <img src="/imgs/waldo.png" class="img--fluid" alt="Waldo">
                 <p>
-                  <a href="{{ $page->getBaseUrl('waldo') }}">Waldo</a>
+                    <a href="{{ $page->getBaseUrl('media') }}">
+                        <img src="/imgs/media.png" class="img--fluid" alt="Media">
+                        Media
+                    </a>
+                </p>
+              </div>
+              <div class="col-md-4 col-md-offset-2">
+                <p>
+                    <a href="{{ $page->getBaseUrl('roster') }}">
+                        <img src="/imgs/roster.png" class="img--fluid" alt="Roster">
+                        Roster
+                    </a>
+                </p>
+              </div>
+              <div class="col-md-4">
+                <p>
+                    <a href="{{ $page->getBaseUrl('waldo') }}">
+                        <img src="/imgs/waldo.png" class="img--fluid" alt="Waldo">
+                        Waldo
+                    </a>
                 </p>
               </div>
           </div>
@@ -61,16 +89,28 @@
           </div>
           <div class="container type--center">
             <div class="row"> 
-              <div class="col-md-4 col-md-offset-2">
-                <img src="//www.csun.edu/metalab/metaphor/docs/imgs/faculty.png" class="img--fluid" alt="Profiles App">
+              <div class="col-md-4">
                 <p>
-                  <a href="//www.csun.edu/faculty">Profiles</a>
+                    <a href="{{ $page->getBaseUrl('jewel') }}">
+                        <img src="/imgs/jewel.png" class="img--fluid" alt="Jewel Wrapper">
+                        Jewel
+                    </a>
                 </p>
                </div>
                <div class="col-md-4">
-                <img src="//www.csun.edu/metalab/metaphor/docs/imgs/helix.png" class="img--fluid" alt="Scholarship App">
                 <p>
-                  <a href="//www.csun.edu/faculty/beta/scholarship">Scholarship</a>
+                    <a href="//www.csun.edu/faculty/beta/scholarship">
+                        <img src="/imgs/faculty.png" class="img--fluid" alt="Profiles App">
+                        Profiles
+                    </a>
+                </p>
+               </div>
+               <div class="col-md-4">
+                <p>
+                    <a href="//www.csun.edu/faculty/beta/scholarship">
+                        <img src="/imgs/helix.png" class="img--fluid" alt="Scholarship App">
+                        Scholarship
+                    </a>
                 </p>
                </div>
             </div>

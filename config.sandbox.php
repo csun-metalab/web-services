@@ -1,9 +1,9 @@
 <?php
 
 return [
-  'sandboxUrl' => "//api.sandbox.csun.edu/metalab/",
-  'sandbox'    => true,
-  'production' => false,
-  'local'      => false,
-  'testing'    => false
+    'sandboxUrl' => '//api.sandbox.csun.edu/metalab/',
+    'sandbox' => true,
+    'production' => false,
+    'local' => false,
+    'testing' => false
 ];
